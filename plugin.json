@@ -1,0 +1,34 @@
+{
+  "name": "stock-data",
+  "displayName": "Stock Data",
+  "version": "1.0.0",
+  "description": "Live stock quotes, ETF data, company profiles, historical candles, and market news via Finnhub",
+  "author": "pearintelligence",
+  "icon": "chart.line.uptrend.xyaxis",
+  "main": "index.ts",
+  "capabilities": {
+    "routes": true,
+    "tools": true,
+    "webhooks": false,
+    "scheduled": false
+  },
+  "hotReloadable": true,
+  "settings": [
+    {
+      "key": "finnhubApiKey",
+      "label": "Finnhub API Key",
+      "description": "Free API key from finnhub.io (60 calls/min)",
+      "type": "secret",
+      "default": ""
+    },
+    {
+      "key": "getFinnhubKey",
+      "label": "Get Free API Key",
+      "type": "link",
+      "url": "https://finnhub.io/register",
+      "buttonText": "Sign Up at Finnhub",
+      "default": ""
+    }
+  ],
+  "dependencies": []
+}
